@@ -16,13 +16,12 @@ The EV3 robot must be efficient, dependable, and easy to use in design to encour
 various conditions, and ease of adaptability for future upgrades.
 It uses modular functions for movement, object identification, and collision detection, enhancing maintainability and 
 scalability. The robot processes sensor data in a pre-coded 20 cm range of obstacle detection, and moves with timed duration, 
-enhancing performance and responsiveness.
-The robot perceives, responds, learns, and acts based on feedback from the environment. Its modularity enables efficient 
-execution, giving organised operation while maintaining the code readable and readily modifiable.
-The program efficiently places emphasis on efficiency with modularisation, making it easy to debug and extend in the future. 
-But modifications can make it stronger, for instance, by calibrating sensor thresholds to prevent potential false inputs or 
-optimising motor speed changes for even smoother motor transitions. Besides,*usability would be enhanced by adding 
-user-friendly logs or warnings for additional interaction and debugging.
+enhancing performance and responsiveness.The robot perceives, responds, learns, and acts based on feedback from the 
+environment. Its modularity enables efficient execution, giving organised operation while maintaining the code readable and 
+readily modifiable. The program efficiently places emphasis on efficiency with modularisation, making it easy to debug and 
+extend in the future. But modifications can make it stronger, for instance, by calibrating sensor thresholds to prevent 
+potential false inputs or optimising motor speed changes for even smoother motor transitions. Besides,*usability would been 
+enhanced by adding user-friendly logs or warnings for additional interaction and debugging.
 
 ## Evaluation of your GROUP'S Final Performance in Relation to the Identifying what needs to be done
 The robot's performance relies on integrating multiple sensors to navigate and interact with objects successfully. Equipped 

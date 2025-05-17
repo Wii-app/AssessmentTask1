@@ -329,3 +329,107 @@ optimizing sensor feedback and movement control would improve the performance. T
 adding additional sensors could improve navigation smoothness and make object handling more predictable. These changes would 
 allow the robot to operate with greater accuracy and efficiency in various environments.
 
+
+# Testing and Debugging
+
+## Test Case 1
+#!/usr/bin/env pybricks-micropython
+from pybricks.hubs import EV3Brick
+from pybricks.ev3devices import Motor
+from pybricks.parameters import Port
+
+#Initialize the EV3 Brick.
+ev3 = EV3Brick()
+
+#Initialize a motor at port B.
+test_motor = Motor(Port.B)
+
+#Initialize motors and sensors
+left_motor = LargeMotor(OUTPUT_A)
+right_motor = LargeMotor(OUTPUT_B)
+gripper_motor = MediumMotor(OUTPUT_C)
+color_sensor = ColorSensor(INPUT_1)
+ultrasonic_sensor = UltrasonicSensor(INPUT_2)
+
+#Move forward to search for blocks
+left_motor.on(30)
+right_motor.on(30)
+sleep(2)
+
+#Stop and check for a block
+left_motor.off()
+right_motor.off()
+if color_sensor.color == ColorSensor.COLOR_RED:
+    # Pick up the red block
+    gripper_motor.on_for_seconds(50, 2)
+    left_motor.on(30)
+    right_motor.on(30)
+    sleep(2)
+    left_motor.off()
+    right_motor.off()
+    gripper_motor.on_for_seconds(-50, 2)  # Drop the block
+
+#Move forward again
+left_motor.on(30)
+right_motor.on(30)
+sleep(2)
+
+#Stop and check for another block
+left_motor.off()
+right_motor.off()
+if color_sensor.color == ColorSensor.COLOR_YELLOW:
+    # Pick up the yellow block
+    gripper_motor.on_for_seconds(50, 2)
+    left_motor.on(30)
+    right_motor.on(30)
+    sleep(2)
+    left_motor.off()
+    right_motor.off()
+    gripper_motor.on_for_seconds(-50, 2)  # Drop the block
+
+#Avoid obstacles using the ultrasonic sensor
+if ultrasonic_sensor.distance_centimeters < 10:
+    left_motor.on(-30)
+    right_motor.on(-30)
+    sleep(1)
+    left_motor.on(30)
+    right_motor.on(-30)
+    sleep(1)
+
+#Move to the designated position
+left_motor.on(30)
+right_motor.on(30)
+sleep(3)
+left_motor.off()
+right_motor.off()
+
+## Test Case 1 - Evaluation
+The provided code for the LEGO EV3 robot introduces functionality for 
+autonomous mobility, block detection, and obstacle 
+avoidance. It utilizes two large motors for locomotion, a medium motor for 
+gripping, a color sensor for identifying red and yellow blocks, and an 
+ultrasonic sensor for obstacle detection. The robot moves forward, stops to 
+look for blocks, grabs red or yellow blocks, and drops them off at certain 
+points. Obstacle avoidance is attempted by reversing and turning when an 
+object is detected at 10 cm. The code suffers from numerous drawbacks like 
+hardcoded sleep values, lack of modularity, and poor error handling. Mixing 
+pybricks and ev3dev2 libraries creates compatibility issues, and the 
+obstacle detection threshold is too low for successful avoidance. While 
+functional, the code can be improved by changing repetitive tasks into 
+functions, increasing the range of obstacle detection, and adding error 
+handling for unrecognized colors or sensor failure.
+
+## Test Case 2
+
+## Test Case 2 - Evaluation
+The Code2 provided demonstrates a good example implementation for a LEGO 
+EV3 robot using the pybricks library compared with the first code. It can move, turn, block 
+pickup, and block drop functionalities as well as obstacle detection. The 
+robot uses a color sensor to detect red and yellow blocks and ultrasonic 
+for obstacles detection. There are areas for improvement. First, the colour
+sensor method might return None when no colour is detected, which is not 
+addressed in the code and can result in runtime exceptions. Probing for 
+None or incorrect colours would improve robustness. Second, the hardcoded 
+speeds and turn times for moving and turning may fail in all situations; 
+these might be set dynamically based on sensor feedback or environment. 
+ Such changes would make the program more robust, efficient, and relevant to real-world applications.
