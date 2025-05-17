@@ -25,7 +25,8 @@ End
 Start
 Import all the needs to program the robot later on
 Robot goes straight
-When the ultrasensor detects an object less than 10cm, the robot stops moving
+When the ultrasensor detects an object less than 20cm, the robot stops moving
 The robot is then trying to detect what colour the block is
 If the colour is red or yellow, it will pick the block up and move to the designated position and drop the block
+If not it will turn right and goes straight
 End

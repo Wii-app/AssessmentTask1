@@ -306,8 +306,26 @@ further improvement in risk analysis, documentation, and time management could b
 implementation in future developments.
 
 ## Evaluation of Project in Relation to Team Collaboration
-Teamwork is what makes us efficient and sometimes challenging. Our group have been working in all areas and parts of the task and while someone does more of something and less of somethinge else, it can depends on the skills of coding, writing and explaining. One of us did most of the code due to him having more skills of coding compared to others while other friends do the pseudocode and flowcharts as well as helping others with the slides and project documentation. 
+Teamwork is what makes us efficient and sometimes challenging. Our group have been working in all areas and parts of the task 
+and while someone does more of something and less of somethinge else, it can depends on the skills of coding, writing and 
+explaining. One of us did most of the code due to him having more skills of coding compared to others while other friends do 
+the pseudocode and flowcharts as well as helping others with the slides and project documentation. We were all contributing i 
+all areas but the work was equal. We had a 2 people doing most of the slides while the other two did the code. If there is one 
+thing we could improve on, maybe productivity. Our group in the beginning was distracted from something irrelevant and were 
+slightly behind on doing the task, but we pulled ourself together and worked to the best of our ability. 
 
 ## Identification and Evaluation of Future Improvements to your Final Product
-Streamlining the final product involves rewriting the code for greater efficiency, responsiveness, and performance as a whole. Areas of improvement can be identified to optimize navigation, obstacle avoidance, and block management more effectively. Small adjustments in sensor inputs and movement mechanics can potentially make the robot more effective and efficient.The current code utilizes colour and ultrasonic sensor for sensing, large motors for movement, and a middle motor for handling objects. These components do work well, but there is room for improvement in the precision of turns, adaptive speed management, and sensor feedback loops to make movements and decisions more accurate. The addition of a touch sensor to confirm contact with objects and an improved obstacle avoidance mechanism would provide additional functionality.Future versions may enhance movement logic by having variable turnings and dynamic speed control through feedback from sensors. The obstacle detection mode could be enhanced to learn by direction or distance. A touch sensor for enhanced object manipulation could be included as a feature to enhance precision and reliability. While the current implementation is functional, optimizing sensor feedback and movement control would improve the performance. Tuning turn mechanisms, adaptive speed, and adding additional sensors could improve navigation smoothness and make object handling more predictable. These changes would allow the robot to operate with greater accuracy and efficiency in various environments
+Streamlining the final product involves rewriting the code for greater efficiency, responsiveness, and performance as a whole.
+Areas of improvement can be identified to optimize navigation, obstacle avoidance, and block management more effectively. 
+Small adjustments in sensor inputs and movement mechanics can potentially make the robot more effective and efficient.The 
+current code utilizes colour and ultrasonic sensor for sensing, large motors for movement, and a middle motor for handling 
+objects. These components do work well, but there is room for improvement in the precision of turns, adaptive speed 
+management, and sensor feedback loops to make movements and decisions more accurate. The addition of a touch sensor to 
+confirm contact with objects and an improved obstacle avoidance mechanism would provide additional functionality.Future 
+versions may enhance movement logic by having variable turnings and dynamic speed control through feedback from sensors. The 
+obstacle detection mode could be enhanced to learn by direction or distance. A touch sensor for enhanced object manipulation 
+could be included as a feature to enhance precision and reliability. While the current implementation is functional, 
+optimizing sensor feedback and movement control would improve the performance. Tuning turn mechanisms, adaptive speed, and 
+adding additional sensors could improve navigation smoothness and make object handling more predictable. These changes would 
+allow the robot to operate with greater accuracy and efficiency in various environments.
 
