@@ -1,13 +1,13 @@
 # Project Evaluation
 ## Evaluation of your INDIVIDUAL Final Test Case in relation to the Functional Criteria
-The robot autonomously searches and sorts colored blocks while avoiding obstacles, utilizing its motors and sensors to carry 
+The robot autonomously searches and sorts colored blocks while avoiding obstacles, utilising its motors and sensors to carry 
 out precise movements and object detection. The test situation employs a color sensor to detect red and yellow blocks, a 
 gripper motor to pick up and drop blocks, and an ultrasonic sensor to detect obstacles. Movement is controlled using left and 
 right motors, and predefined timing and speeds yield structured navigation.The EV3 robot moves forward, stops, senses blocks, 
 picks up red or yellow blocks, drops them, and changes direction if there is a barrier. If there is a blockage within 20cm, 
 the robot reverses and rotates prior to advancing.The test case demonstrates basic object recognition and sorting 
-functionality via colour sensing and motor control. Error handling can be improved— addition of conditions for unrecognized 
-color or irregular sensor input would render the program more robust. Furthermore, optimizing movement logic within obstacle 
+functionality via colour sensing and motor control. Error handling can be improved— addition of conditions for unrecognised 
+color or irregular sensor input would render the program more robust. Furthermore, optimising movement logic within obstacle 
 avoidance (e.g., using alternate paths instead of a simple reversal and turn) would render the program more efficient in 
 complex environments.
 
@@ -27,7 +27,7 @@ enhanced by adding user-friendly logs or warnings for additional interaction and
 The robot's performance relies on integrating multiple sensors to navigate and interact with objects successfully. Equipped 
 with color and ultrasonic sensors, the robot sorts blocks and avoids obstacles and carries out given tasks with precision. The 
 additional motor gives efficient manipulation of objects for successful completion of programmed movements.
-The robot is equipped with an EV3 Colour Sensor to recognize red and yellow blocks and an Ultrasonic Sensor to recognize 
+The robot is equipped with an EV3 Colour Sensor to recognise red and yellow blocks and an Ultrasonic Sensor to recognise 
 obstacles within 20 cm. It is equipped with two Large Motors for movement control and one other type of motor to operate the 
 gripper to pick and release blocks. Program logic consists of structured steps: move forward, block colour sensing, pick and 
 place blocks, and obstacle avoidance by reversing and turning.The robot proceeds to search for blocks, searches for colours 
@@ -41,18 +41,18 @@ detection would take the system's performance to the next level.
 
 ## Evaluation of Project in Relation to Project Management
 Effective project management ensures that the work is completed well, the use of resources is appropriately efficient, and the 
-objectives are met within the set constraints. Organized planning, task allocation, and repeated problem-solving are key roles 
-in maximizing the development for this robotics project. Integration of sensors, motors, and programming into one system 
-requires proper coordination and fit. The project has a clear methodology, utilizing two sensors (colour and ultrasonic) for 
+objectives are met within the set constraints. Organised planning, task allocation, and repeated problem-solving are key roles 
+in maximising the development for this robotics project. Integration of sensors, motors, and programming into one system 
+requires proper coordination and fit. The project has a clear methodology, utilising two sensors (colour and ultrasonic) for 
 navigation and obstacle detection, and three motors for movement and object operation. Systematic implementation is maintained 
 using program logic with ordered functions for movement, evasion from obstacles, and operation of blocks. Gradual improvements 
-open up possibilities to improve turning logic, enhance object recognition, and optimize speed control for improving overall 
+open up possibilities to improve turning logic, enhance object recognition, and optimise speed control for improving overall 
 efficiency.The group carefully plans every phase of development, tasks are delegated to enable effective implementation and 
 code is written that includes hardware aspects. Through the process of testing, the group identifies areas of improvement, 
-makes iterative refinements in alignment with performance, and maximizes the robot's functions. Throughout the process, the 
+makes iterative refinements in alignment with performance, and maximises the robot's functions. Throughout the process, the 
 group collaborates closely, debugs, and examines the effectiveness of every implementation.The project shows good project 
 management procedures, with technical development weighing against strategic planning. The process is structured so that 
-sensor and motor integration adheres to project objectives, and continuous testing optimizes performance. Even with success, 
+sensor and motor integration adheres to project objectives, and continuous testing optimises performance. Even with success, 
 further improvement in risk analysis, documentation, and time management could bring efficiency to facilitate smooth 
 implementation in future developments.
 
@@ -67,15 +67,15 @@ slightly behind on doing the task, but we pulled ourself together and worked to 
 
 ## Identification and Evaluation of Future Improvements to your Final Product
 Streamlining the final product involves rewriting the code for greater efficiency, responsiveness, and performance as a whole.
-Areas of improvement can be identified to optimize navigation, obstacle avoidance, and block management more effectively. 
+Areas of improvement can be identified to optimise navigation, obstacle avoidance, and block management more effectively. 
 Small adjustments in sensor inputs and movement mechanics can potentially make the robot more effective and efficient.The 
-current code utilizes colour and ultrasonic sensor for sensing, large motors for movement, and a middle motor for handling 
+current code utilises colour and ultrasonic sensor for sensing, large motors for movement, and a middle motor for handling 
 objects. These components do work well, but there is room for improvement in the precision of turns, adaptive speed 
 management, and sensor feedback loops to make movements and decisions more accurate. The addition of a touch sensor to 
 confirm contact with objects and an improved obstacle avoidance mechanism would provide additional functionality.Future 
 versions may enhance movement logic by having variable turnings and dynamic speed control through feedback from sensors. The 
 obstacle detection mode could be enhanced to learn by direction or distance. A touch sensor for enhanced object manipulation 
 could be included as a feature to enhance precision and reliability. While the current implementation is functional, 
-optimizing sensor feedback and movement control would improve the performance. Tuning turn mechanisms, adaptive speed, and 
+optimising sensor feedback and movement control would improve the performance. Tuning turn mechanisms, adaptive speed, and 
 adding additional sensors could improve navigation smoothness and make object handling more predictable. These changes would 
 allow the robot to operate with greater accuracy and efficiency in various environments.
