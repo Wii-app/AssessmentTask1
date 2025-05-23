@@ -56,13 +56,13 @@ End
 
 # Flowchart
 ### Flowchart 1
-![alt text](image.png)
+![Flowchart1](image.png)
 
 ### Flowchart 2
-![alt text](image-1.png)
+![Flowchart2](image-1.png)
 
 ### Flowchart 3
-![alt text](image-2.png)
+![Flowchart3](image-2.png)
 
 
 
